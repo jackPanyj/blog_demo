@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>下载</title>
+  <style media="screen">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh
+    }
+  </style>
 </head>
 <body>
-  请输入下载地址： <input type="url" v-model='url' value=""> <br>
+  请输入下载地址： <input type="url" v-model='url' value="">
   <a :href="url" download>下载</a>
   <script src="//cdn.bootcss.com/vue/1.0.22/vue.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     new Vue({
       el: 'body',
       data: {
-        url: ''
+        url: 'http://jackpanyj.github.io/blog_demo/img/css-radius-in.png'
       }
     })
   </script>
