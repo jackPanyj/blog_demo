@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>cal-heatmap</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="cal-heatmap"></div>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    var cal = new CalHeatMap();
+    cal.init({
+        id: "cal-heatmap",
+        start: new Date(2015, 0),
+        data:"data.json",
+        domain : "month",
+        subDomain : "day",
+        range : 12,
+        cellsize: 12,
+    });
+    </script>
+  </body>
+</html>
